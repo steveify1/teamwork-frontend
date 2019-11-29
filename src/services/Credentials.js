@@ -9,3 +9,10 @@ export const getToken = () => {
 
 // Returns a boolean depending on whether or not the user has his token stored in the localStorage
 export const isUserSignedIn = () => getToken();
+
+const credentials = () => {
+  const curUser = JSON.parse(localStorage.getItem('curUser'));
+  return curUser && curUser;
+};
+
+export default credentials;

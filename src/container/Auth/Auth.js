@@ -88,14 +88,16 @@ class Auth extends Component {
     try {
       const res = await axios.post('/auth/signin', this.loginDetails);
 
+      console.log(res.data.data);
+
       // store user credentials in local storage
       this.storeCredentials(res.data.data);
 
       // update user sign in state and reset the errorFeedback
-      this.setState({
-        isUserLoggedIn: true,
-        errorFeedback: '',
-      });
+      // this.setState({
+      //   isUserLoggedIn: true,
+      //   errorFeedback: '',
+      // });
     } catch ({ response }) {
       this.setState({ errorFeedback: response.data.error });
     }
