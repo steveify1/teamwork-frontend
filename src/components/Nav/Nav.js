@@ -6,7 +6,7 @@ import './Nav.css';
 
 // Navigation
 const Nav = (props) => {
-  const { jobRole } = credentials();
+  const { jobRole, userId } = credentials();
 
   return (<nav id='main-nav'>
     {/* Logo */}
@@ -29,9 +29,9 @@ const Nav = (props) => {
       <ul>
         <li><Link to='/' className='active'>Stories</Link></li>
         <li><Link to='/post/new'>Workspace</Link></li>
-        <li><Link to='/logout'>Team</Link></li>
+        {jobRole === 'admin' ? <li><Link to='/members'>Team</Link></li> : null}
         <li><Link onClick={props.triggerSignOut} to='/'>Logout</Link></li>
-        <li><Link to='/user/id'>Me</Link></li>
+        <li><Link to={`users/${userId}`}>Me</Link></li>
       </ul>
     </div>
   </nav>);
