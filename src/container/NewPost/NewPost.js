@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { isUserSignedIn } from '../../services/Credentials';
 import { withRouter, Redirect } from 'react-router-dom';
-import api from '../../config/api';
 import Section from '../../hoc/Section/Section';
 import InputField from '../../components/InputField/InputField';
 import Aux from '../../hoc/Auxiliary/Auxiliary';
@@ -42,12 +41,8 @@ class NewPost extends Component {
   async componentDidMount() {
 
     if (this.isEditingPost) {
-      const endpoint = `${api.baseURL}/articles/${this.postId}`;
-      const res = await axios.get(endpoint, {
-        headers: {
-          token: api.token,
-        }
-      });
+      const endpoint = `/articles/${this.postId}`;
+      const res = await axios.get(endpoint);
 
       const { data } = res.data;
 
@@ -201,14 +196,8 @@ class NewPost extends Component {
 
     console.log(updatedPostToEdit);
 
-    const { token, baseURL } = api;
-
-    const config = {
-      headers: { token }
-    };
-
     try {
-      const res = await axios.patch(`${baseURL}/articles/${this.postId}`, updatedPostToEdit, config);
+      const res = await axios.patch(`/articles/${this.postId}`, updatedPostToEdit);
 
       console.log(res);
 
