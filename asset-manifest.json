@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/teamwork-frontend/static/css/main.19957c7f.chunk.css",
+    "main.js": "/teamwork-frontend/static/js/main.820b9db9.chunk.js",
+    "main.js.map": "/teamwork-frontend/static/js/main.820b9db9.chunk.js.map",
+    "runtime-main.js": "/teamwork-frontend/static/js/runtime-main.b288330e.js",
+    "runtime-main.js.map": "/teamwork-frontend/static/js/runtime-main.b288330e.js.map",
+    "static/js/2.1543a0dc.chunk.js": "/teamwork-frontend/static/js/2.1543a0dc.chunk.js",
+    "static/js/2.1543a0dc.chunk.js.map": "/teamwork-frontend/static/js/2.1543a0dc.chunk.js.map",
+    "index.html": "/teamwork-frontend/index.html",
+    "precache-manifest.24ecd1b84c92c9974f53cc4520ca5c51.js": "/teamwork-frontend/precache-manifest.24ecd1b84c92c9974f53cc4520ca5c51.js",
+    "service-worker.js": "/teamwork-frontend/service-worker.js",
+    "static/css/main.19957c7f.chunk.css.map": "/teamwork-frontend/static/css/main.19957c7f.chunk.css.map",
+    "static/media/bg4-2.svg": "/teamwork-frontend/static/media/bg4-2.ba8fda24.svg",
+    "static/media/PostDetail.module.css": "/teamwork-frontend/static/media/red-paper-airplane-fly-dark-blue-background_44481-304.9cd2e14a.jpg",
+    "static/media/standing-20.svg": "/teamwork-frontend/static/media/standing-20.90aaa58f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b288330e.js",
+    "static/js/2.1543a0dc.chunk.js",
+    "static/css/main.19957c7f.chunk.css",
+    "static/js/main.820b9db9.chunk.js"
+  ]
+}
