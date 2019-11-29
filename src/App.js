@@ -5,7 +5,7 @@ import Auth from './container/Auth/Auth';
 import './App.css';
 
 // Configure Axios Defaults:: baseURL and Token
-axios.defaults.baseURL = 'http://127.0.0.1:8000/api/v1';
+axios.defaults.baseURL = 'https://floating-lowlands-92074.herokuapp.com/api/v1';
 
 function App() {
   return (

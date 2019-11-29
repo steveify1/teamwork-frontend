@@ -20,7 +20,7 @@ const signup = (props) => {
           <h1>New Employee Account</h1>
         </div>
 
-        <h2>The #1 social workspace</h2>
+        <p>Set up a new user account. Account credentials will be sent to the email address provided. Please, ensure that the email is correct.</p>
 
         <form onSubmit={props.submitted}>
           {/* Show error feedback if any */}
@@ -53,7 +53,6 @@ const signup = (props) => {
           <Button size='full-width'>create account</Button>
         </form>
       </div>
-
     </div>
   )
 }

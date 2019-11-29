@@ -74,6 +74,10 @@
   color: rgb(7, 111, 180);
 }
 
+.Login p {
+  font-size: 0.95rem;
+}
+
 .Login form {
   margin-top: 1em;
 }

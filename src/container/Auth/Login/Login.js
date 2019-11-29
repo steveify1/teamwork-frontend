@@ -29,7 +29,7 @@ const login = (props) => {
           <InputField changed={props.changed} id='password' type='password' name='password *' />
           <Button size='full-width'>sign in</Button>
 
-          <span className={classes.Footer} onClick={props.toggleScreen}>Don't have an account?</span>
+          {/* <span className={classes.Footer} onClick={props.toggleScreen}>Don't have an account?</span> */}
         </form>
       </div>
     </div>
