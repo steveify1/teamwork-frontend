@@ -21,6 +21,7 @@ class NewPost extends Component {
       prevActiveTab: null,
       activeTabControl: null,
 
+      // This holds the details (fetched from api by id) of the post we want to edit
       postToEdit: {},
 
       redirect: false,
