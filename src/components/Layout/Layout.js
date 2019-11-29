@@ -3,7 +3,6 @@ import axios from 'axios';
 import { getToken } from '../../services/Credentials';
 import Aux from '../../hoc/Auxiliary/Auxiliary';
 import Nav from '../../components/Nav/Nav';
-import Hero from '../../components/Hero/Hero';
 import Routes from '../../hoc/Routes';
 
 const layout = (props) => {
@@ -20,7 +19,6 @@ const layout = (props) => {
     <Aux>
       {/* Navigation */}
       <Nav triggerSignOut={props.signOutHandler} />
-      <Hero />
 
       {/* Main Section */}
       <main>
