@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Aux from '../../hoc/Auxiliary/Auxiliary';
 import Section from '../../hoc/Section/Section';
 import Posts from '../Posts/Posts';
-import Categories from '../Categories/Categories';
+// import Categories from '../Categories/Categories';
 
 
 class Home extends Component {
@@ -10,7 +10,7 @@ class Home extends Component {
     return (
       <Aux>
         {/* Popular Categories */}
-        <Categories />
+        {/* <Categories /> */}
         {/* Posts */}
         <Section
           id='posts'
