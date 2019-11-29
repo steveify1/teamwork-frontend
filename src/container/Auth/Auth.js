@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
 import axios from 'axios';
-// import api from '../../config/api';
 import Aux from '../../hoc/Auxiliary/Auxiliary';
 import Login from './Login/Login';
 import SignUp from './SignUp/SignUp';
@@ -94,10 +92,10 @@ class Auth extends Component {
       this.storeCredentials(res.data.data);
 
       // update user sign in state and reset the errorFeedback
-      // this.setState({
-      //   isUserLoggedIn: true,
-      //   errorFeedback: '',
-      // });
+      this.setState({
+        isUserLoggedIn: true,
+        errorFeedback: '',
+      });
     } catch ({ response }) {
       this.setState({ errorFeedback: response.data.error });
     }
@@ -188,7 +186,6 @@ class Auth extends Component {
   render() {
     return (
       <Aux>
-        {this.state.isUserLoggedIn ? null : <Redirect to='/' />}
         {this.state.isUserLoggedIn ? this.renderAppCore() : this.renderLoginOrSignUpScreen()};
       </Aux>
     );

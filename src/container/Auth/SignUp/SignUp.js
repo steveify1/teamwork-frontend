@@ -9,15 +9,15 @@ const signup = (props) => {
 
   return (
     <div className={classes.LoginWrapper}>
-      <div className={classes.Banner}></div>
-
-      <div className={classes.Image}>
-        <img src={image} alt='catch up with team mates' />
+      <div className={classes.Banner}>
+        <div className={classes.Image}>
+          <img src={image} alt='catch up with team mates' />
+        </div>
       </div>
 
       <div className={classes.Login}>
         <div className={classes.Brand}>
-          <h1>TeamWork</h1>
+          <h1>New Employee Account</h1>
         </div>
 
         <h2>The #1 social workspace</h2>
@@ -50,11 +50,10 @@ const signup = (props) => {
               { name: 'Research' },
               { name: 'Analytics' }]} />
           <InputField changed={props.changed} id='address' type='text' name='address *' />
-          <Button size='full-width'>sign up</Button>
-
-          <span className={classes.Footer} onClick={props.toggleScreen}>Already have an account?</span>
+          <Button size='full-width'>create account</Button>
         </form>
       </div>
+
     </div>
   )
 }
